@@ -1,9 +1,12 @@
-# dotfiles
-this is my dotfiles for linux
+#dotfiles
+
+these are my configuration files for linux
 
 
-**tmux.conf**
 ```bash
-cp tmux.conf ~/.config/
-tmux source ~/.config/tmux.conf
+cp ~/.config/i3/config ~/.config/i3/config.bak
+cp ./i3/config ~/.config/i3/config
+cp -r ./i3status ~/.config/
+cp ./90-touchpad.conf /etc/X11/xorg.conf.d/
+cp -r ./fonts/ ~/.local/share/
 ```
