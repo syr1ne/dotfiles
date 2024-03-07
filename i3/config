@@ -205,3 +205,5 @@ bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl -q set 5%+
 exec --no-startup-id xrandr --output eDP-1 --mode 1920x1080 --output HDMI-1 --mode 1366x768 --left-of eDP-1
 
 exec --no-startup-id udiskie
+
+exec --no-startup-id dunst --conf ~/.config/dunst/dunstrc
