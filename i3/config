@@ -202,8 +202,18 @@ exec_always --no-startup-id feh --bg-fill ~/pictures/wallpaper.jpg
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl --min-val=2 -q set 5%-
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl -q set 5%+
 
-exec --no-startup-id xrandr --output eDP-1 --mode 1920x1080 --output HDMI-1 --mode 1366x768 --left-of eDP-1
+exec_always --no-startup-id xrandr --output eDP-1 --mode 1920x1080 --output HDMI-1 --mode 1366x768 --left-of eDP-1
 
 exec --no-startup-id udiskie
 
 exec --no-startup-id dunst --conf ~/.config/dunst/dunstrc
+
+bindsym $mod+Ctrl+Shift+Left  move workspace to output left
+bindsym $mod+Ctrl+Shift+Right move workspace to output right
+bindsym $mod+Ctrl+Shift+Up move workspace to output up
+bindsym $mod+Ctrl+Shift+Down move workspace to output down
+
+bindsym $mod+Ctrl+Shift+h  move workspace to output left
+bindsym $mod+Ctrl+Shift+l move workspace to output right
+bindsym $mod+Ctrl+Shift+k move workspace to output up
+bindsym $mod+Ctrl+Shift+j move workspace to output down
