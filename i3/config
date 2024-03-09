@@ -197,12 +197,12 @@ bar {
 gaps inner 7
 gaps outer 7
 
-exec_always --no-startup-id feh --bg-fill ~/pictures/wallpaper.jpg
+exec_always --no-startup-id feh --bg-fill ~/pictures/wallpaper.png
 
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl --min-val=2 -q set 5%-
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl -q set 5%+
 
-exec_always --no-startup-id xrandr --output eDP-1 --mode 1920x1080 --output HDMI-1 --mode 1366x768 --left-of eDP-1
+exec --no-startup-id xrandr --output eDP-1 --mode 1920x1080 --output HDMI-1 --mode 1366x768 --left-of eDP-1
 
 exec --no-startup-id udiskie
 
@@ -217,3 +217,8 @@ bindsym $mod+Ctrl+Shift+j  move workspace to output left
 bindsym $mod+Ctrl+Shift+k move workspace to output down
 bindsym $mod+Ctrl+Shift+l move workspace to output up
 bindsym $mod+Ctrl+Shift+semicolon move workspace to output right
+
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioPause exec playerctl play-pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
