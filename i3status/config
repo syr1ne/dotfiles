@@ -56,5 +56,5 @@ volume master {
 #}
 
 tztime local {
-        format = " DATE: [%d-%m-%Y]  TIME: [%H:%M] "
+        format = " DATE: [%d-%m-%Y]  TIME: [%I:%M] "
 }
