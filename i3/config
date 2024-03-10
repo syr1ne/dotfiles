@@ -197,7 +197,7 @@ bar {
 gaps inner 7
 gaps outer 7
 
-exec_always --no-startup-id feh --bg-fill ~/pictures/wallpaper.png
+exec_always --no-startup-id feh --bg-fill --randomize ~/.wallpapers/*
 
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl --min-val=2 -q set 5%-
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl -q set 5%+
