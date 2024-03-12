@@ -197,7 +197,7 @@ bar {
 gaps inner 7
 gaps outer 7
 
-exec_always --no-startup-id feh --bg-fill --randomize ~/.wallpapers/*
+exec_always --no-startup-id  shuf -e -n1 $HOME/.wallpapers/* | xargs feh --bg-fill
 
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl --min-val=2 -q set 5%-
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl -q set 5%+
@@ -206,7 +206,7 @@ exec --no-startup-id xrandr --output eDP-1 --mode 1920x1080 --output HDMI-1 --mo
 
 exec --no-startup-id udiskie
 
-exec --no-startup-id dunst --conf ~/.config/dunst/dunstrc
+exec --no-startup-id dunst --conf $HOME/.config/dunst/dunstrc
 
 bindsym $mod+Ctrl+Shift+Left  move workspace to output left
 bindsym $mod+Ctrl+Shift+Right move workspace to output right
