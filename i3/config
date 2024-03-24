@@ -169,6 +169,9 @@ exec --no-startup-id udiskie
 # notification
 exec --no-startup-id dunst --conf $HOME/.config/dunst/dunstrc
 
+# transparency
+exec_always --no-startup-id picom -b
+
 # brightness
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl --min-val=2 -q set 5%-
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl -q set 5%+

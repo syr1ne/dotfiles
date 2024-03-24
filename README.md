@@ -13,11 +13,11 @@ cp -r ./kitty ~/.config/
 sudo cp ./90-touchpad.conf /etc/X11/xorg.conf.d/
 mkdir -p ~/.local/share/
 cp -r ./fonts/ ~/.local/share/
-
+mkdir ~/.wallpapers
 ```
 
 ## installation
 
 ```
-yay -S git code burpsuite spotify thunar thunar-archive-plugin vlc udiskie timeshift telegram-desktop netcat wget metasploit nmap dirsearch ffuf seclists hydra sublime-text-4 noto-fonts-emoji cups system-config-printer dunst lsusb openssh xarchiver unzip unrar openvpn noto-fonts flameshot playerctl auto-cpufreq lxappearance materia-gtk-theme papirus-icon-theme brave-bin brightnessctl dnsutils 
+yay -S git code burpsuite spotify thunar thunar-archive-plugin vlc udiskie timeshift telegram-desktop netcat wget metasploit nmap dirsearch ffuf seclists hydra sublime-text-4 noto-fonts-emoji cups system-config-printer dunst lsusb openssh xarchiver unzip unrar openvpn noto-fonts flameshot playerctl auto-cpufreq lxappearance materia-gtk-theme papirus-icon-theme brave-bin brightnessctl dnsutils xorg-xrandr picom 
 ```
