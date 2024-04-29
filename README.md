@@ -10,6 +10,7 @@ cp ./i3/config ~/.config/i3/config
 cp -r ./i3status ~/.config/
 cp -r ./dunst ~/.config/
 cp -r ./kitty ~/.config/
+cp -r ./picom ~/.config/
 sudo cp ./90-touchpad.conf /etc/X11/xorg.conf.d/
 mkdir -p ~/.local/share/
 cp -r ./fonts/ ~/.local/share/
@@ -19,5 +20,5 @@ mkdir ~/.wallpapers
 ## installation
 
 ```
-yay -S git code thunar thunar-archive-plugin vlc udiskie netcat wget sublime-text-4 noto-fonts-emoji cups system-config-printer dunst lsusb openssh xarchiver unzip unrar openvpn noto-fonts flameshot playerctl auto-cpufreq lxappearance materia-gtk-theme papirus-icon-theme brave-bin brightnessctl dnsutils xorg-xrandr picom 
+yay -S git code thunar thunar-archive-plugin vlc udiskie netcat wget sublime-text-4 noto-fonts-emoji cups system-config-printer dunst lsusb openssh xarchiver unzip unrar openvpn noto-fonts flameshot playerctl auto-cpufreq lxappearance feh materia-gtk-theme papirus-icon-theme brave-bin brightnessctl dnsutils xorg-xrandr picom 
 ```
