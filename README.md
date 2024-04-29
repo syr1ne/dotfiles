@@ -1,4 +1,4 @@
-#dotfiles
+# dotfiles
 
 these are my configuration files for linux
 
@@ -11,6 +11,7 @@ cp -r ./i3status ~/.config/
 cp -r ./dunst ~/.config/
 cp -r ./kitty ~/.config/
 cp -r ./picom ~/.config/
+cp .vimrc ~/
 sudo cp ./90-touchpad.conf /etc/X11/xorg.conf.d/
 mkdir -p ~/.local/share/
 cp -r ./fonts/ ~/.local/share/
