@@ -10,7 +10,7 @@ set tabstop=2
 set expandtab
 set nobackup
 set scrolloff=10
-set nowrap
+set wrap
 set incsearch
 set ignorecase
 set smartcase

@@ -161,7 +161,7 @@ gaps outer 5
 exec_always --no-startup-id  shuf -e -n1 $HOME/.wallpapers/* | xargs feh --bg-fill
 
 # monitors
-exec --no-startup-id xrandr --output eDP-1 --mode 1920x1080 --output HDMI-1 --mode 1366x768 --left-of eDP-1
+exec_always --no-startup-id xrandr --output eDP-1 --mode 1920x1080 --output HDMI-1 --mode 1366x768 --left-of eDP-1
 
 # for usb
 exec --no-startup-id udiskie
