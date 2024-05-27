@@ -16,6 +16,7 @@ sudo cp ./90-touchpad.conf /etc/X11/xorg.conf.d/
 mkdir -p ~/.local/share/
 cp -r ./fonts/ ~/.local/share/
 mkdir ~/.wallpapers
+sudo cp ./refresh /usr/local/bin/
 ```
 
 ## arch installation
