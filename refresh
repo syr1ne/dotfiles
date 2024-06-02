@@ -2,29 +2,42 @@
 
 RED='\033[0;31m'
 BLUE='\033[0;34m'
-Green='\033[0;32m'
 NC='\033[0m'
 
 if command -v apt &> /dev/null
 then
-  echo -e "${BLUE} [+] ${NC} apt found"
-  echo -e "${BLUE} [+] ${NC} updating packages using apt..."
-  sudo apt update -y &> /dev/null
-  sudo apt full-upgrade -y &> /dev/null
-  echo -e "${GREEN} ==>  apt update completed! ${NC}"
-  echo -e "${BLUE} [+] ${NC} removing useless packages..."
-  sudo apt autoremove &> /dev/null
-  sudo apt autoclean -y &> /dev/null
-  echo -e "${GREEN} ==>  apt cleaning completed! ${NC}"
+  echo ""
+  echo -e "${BLUE} [+] apt found ${NC}"
+  echo -e "${BLUE} [+] updating packages using apt... ${NC}"
+  sudo apt update -y 
+  sudo apt full-upgrade -y
+  echo -e "${RED} ==>  apt update completed! ${NC}"
+  echo -e "${BLUE} [+] removing useless packages... ${NC}"
+  sudo apt autoremove -y
+  sudo apt autoclean -y
+  echo -e "${RED} ==>  apt cleaning completed! ${NC}"
+  echo ""
 fi
 
 if command -v yay &> /dev/null
 then
-  echo -e "${BLUE} [+] ${NC} yay found"
-  echo -e "${BLUE} [+] ${NC} updating packages using yay..."
-  yay -Syyyu &>/dev/null
-  echo -e "${GREEN} ==>  yay update completed! ${NC}"
-  echo -e "${BLUE} [+] ${NC} cleaning unneeded dependencies"
+  echo ""
+  echo -e "${BLUE} [+] yay found ${NC}"
+  echo -e "${BLUE} [+] updating packages using yay... ${NC}"
+  yay -Syyyu
+  echo -e "${RED} ==>  yay update completed! ${NC}"
+  echo -e "${BLUE} [+] cleaning unneeded dependencies ${NC}"
   yay -Yc
-  echo -e "${GREEN} ==>  yay cleaning completed ${NC}"
+  echo -e "${RED} ==>  yay cleaning completed ${NC}"
+  echo ""
+fi
+
+if command -v snap &> /dev/null
+then
+  echo ""
+  echo -e "${BLUE} [+] snap found ${NC}"
+  echo -e "${BLUE} [+] refreshing snap ${NC}"
+  snap refresh
+  echo -e "${RED} ==> snap refresh completed ${NC}"
+  echo ""
 fi
