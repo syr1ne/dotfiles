@@ -37,7 +37,7 @@ then
   echo ""
   echo -e "${BLUE} [+] snap found ${NC}"
   echo -e "${BLUE} [+] refreshing snap ${NC}"
-  snap refresh
+  sudo snap refresh
   echo -e "${RED} ==> snap refresh completed ${NC}"
   echo ""
 fi
