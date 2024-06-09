@@ -207,3 +207,16 @@ client.focused          $bgcolor        $bgcolor        $text           $indicat
 client.unfocused        $in-bgcolor     $in-bgcolor     $in-text        $in-bgcolor
 client.focused_inactive $in-bgcolor     $in-bgcolor     $in-text        $in-bgcolor
 client.urgent           $u-bgcolor      $u-bgcolor      $text           $u-bgcolor 
+
+for_window [class="^.*"] border pixel 0
+
+# resizing window
+bindsym $mod+Control+j resize shrink width 100 px or 100 ppt
+bindsym $mod+Control+k resize grow height 100 px or 100 ppt
+bindsym $mod+Control+l resize shrink height 100 px or 100 ppt
+bindsym $mod+Control+semicolon resize grow width 100 px or 100 ppt
+
+bindsym $mod+Control+Left resize shrink width 100 px or 100 ppt
+bindsym $mod+Control+Down resize grow height 100 px or 100 ppt
+bindsym $mod+Control+Up resize shrink height 100 px or 100 ppt
+bindsym $mod+Control+Right resize grow width 100 px or 100 ppt
