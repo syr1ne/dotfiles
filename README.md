@@ -2,6 +2,8 @@
 
 these are my configuration files for linux
 
+![screenshot](https://github.com/syr1ne/dotfiles/blob/main/screenshot.png)
+
 ## setup
 
 ```bash
