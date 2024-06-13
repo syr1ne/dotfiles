@@ -41,3 +41,13 @@ then
   echo -e "${RED} ==> snap refresh completed ${NC}"
   echo ""
 fi
+
+if command -v flatpak &> /dev/null
+then
+  echo ""
+  echo -e "${BLUE} [+] flatpak found ${NC}"
+  echo -e "${BLUE} [+] repairing flatpak ${NC}"
+  flatpak repair
+  echo -e "${RED} ==> flatpak repair completed ${NC}"
+  echo ""
+fi
