@@ -35,3 +35,9 @@ cp ./backups/user-dirs.defaults /etc/xdg/user-dirs.defaults
 cp ./backups/user-dirs.dirs ~/.config/user-dirs.dirs
 xdg-user-dirs-update
 ```
+
+pbcopy and pbpaste for linux: install `xsel` and add below lines in your `.bashrc` file.
+```
+alias pbcopy="xsel -i -b"
+alias pbpaste="xsel -o -b"
+```
