@@ -24,16 +24,15 @@ sudo cp ./refresh /usr/local/bin/
 ## arch installation
 
 ```
-yay -S git code thunar thunar-archive-plugin vlc udiskie netcat wget sublime-text-4 noto-fonts-emoji cups system-config-printer dunst lsusb openssh xarchiver unzip unrar openvpn noto-fonts flameshot playerctl auto-cpufreq lxappearance feh materia-gtk-theme papirus-icon-theme brave-bin brightnessctl dnsutils xorg-xrandr picom 
+yay -S git code thunar thunar-archive-plugin udiskie netcat wget sublime-text-4 noto-fonts-emoji cups system-config-printer dunst lsusb openssh xarchiver unzip unrar openvpn noto-fonts flameshot playerctl auto-cpufreq lxappearance feh materia-gtk-theme papirus-icon-theme brightnessctl dnsutils xorg-xrandr picom xsel 
 ```
 
 # extras
 there are extra configuration files for DE.
 
 ```
-cp ./backups/user-dirs.defaults /etc/xdg/user-dirs.defaults
+sudo cp ./backups/user-dirs.defaults /etc/xdg/user-dirs.defaults
 cp ./backups/user-dirs.dirs ~/.config/user-dirs.dirs
-xdg-user-dirs-update
 ```
 
 pbcopy and pbpaste for linux: install `xsel` and add below lines in your `.bashrc` file.
