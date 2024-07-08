@@ -28,8 +28,8 @@ bindsym $mod+Return exec kitty
 # close
 bindsym $mod+q kill
 
-#dmenu
-bindsym $mod+d exec --no-startup-id dmenu_run -fn 'Hack-15'
+# dmenu
+# bindsym $mod+d exec --no-startup-id dmenu_run -fn 'Hack-15'
 
 # change focus
 bindsym $mod+j focus left
@@ -160,7 +160,7 @@ gaps outer 5
 exec_always --no-startup-id  shuf -e -n1 $HOME/.wallpapers/* | xargs feh --bg-fill
 
 # monitors
-exec_always --no-startup-id xrandr --output eDP-1 --mode 1920x1080 --output HDMI-1 --mode 1366x768 --right-of eDP-1
+exec_always --no-startup-id xrandr --output eDP-1 --mode 1920x1080 --output HDMI-1 --mode 1366x768 --left-of eDP-1
 
 # for usb
 exec --no-startup-id udiskie
@@ -209,6 +209,8 @@ client.focused_inactive $in-bgcolor     $in-bgcolor     $in-text        $in-bgco
 client.urgent           $u-bgcolor      $u-bgcolor      $text           $u-bgcolor 
 
 # for_window [class="^.*"] border pixel 0
+
+bindsym $mod+d exec --no-startup-id rofi -no-config -show drun -font "Hack 15" -icon-theme "Papirus" -show-icons -theme "Arc-Dark"
 
 # resizing window
 bindsym $mod+Control+j resize shrink width 100 px or 100 ppt
