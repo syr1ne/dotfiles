@@ -1,8 +1,8 @@
 #DESKTOP=desktop
+#TEMPLATES=templates
+#PUBLICSHARE=public
+#MUSIC=music
+DOCUMENTS=documents
 DOWNLOAD=downloads
-#TEMPLATES=Templates
-#PUBLICSHARE=Public
-#DOCUMENTS=Documents
-#MUSIC=Music
 PICTURES=pictures
 VIDEOS=videos
