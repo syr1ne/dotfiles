@@ -4,6 +4,7 @@ RED='\033[0;31m'
 BLUE='\033[0;34m'
 NC='\033[0m'
 
+# apt
 if command -v apt &> /dev/null
 then
   echo ""
@@ -19,6 +20,21 @@ then
   echo ""
 fi
 
+# pacman
+if command -v pacman &> /dev/null
+then
+  echo ""
+  echo -e "${BLUE} [+] pacman found ${NC}"
+  echo -e "${BLUE} [+] updating packages using pacman... ${NC}"
+  sudo pacman -Syyyu
+  echo -e "${RED} ==>  pacman update completed! ${NC}"
+  echo -e "${BLUE} [+] cleaning unneeded dependencies ${NC}"
+  sudo pacman -Sc --noconfirm
+  echo -e "${RED} ==>  pacman cleaning completed ${NC}"
+  echo ""
+fi
+
+# yay
 if command -v yay &> /dev/null
 then
   echo ""
@@ -32,6 +48,7 @@ then
   echo ""
 fi
 
+# snap
 if command -v snap &> /dev/null
 then
   echo ""
@@ -42,6 +59,7 @@ then
   echo ""
 fi
 
+# flatpak
 if command -v flatpak &> /dev/null
 then
   echo ""
