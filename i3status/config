@@ -7,11 +7,16 @@ general {
 
 # layout
 
+order += "memory"
 order += "volume master"
 order += "battery all"
 order += "tztime local"
 
 # config
+
+memory {
+  format = "MEM: %used "
+}
 
 volume master {
 	format = " VOLUME: [%volume] "
