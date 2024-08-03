@@ -1,8 +1,8 @@
 # i3status config
 
 general {
-        colors = true
-        interval = 5
+  colors = true
+  interval = 5
 }
 
 # layout
