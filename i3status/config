@@ -8,6 +8,7 @@ general {
 # layout
 
 order += "memory"
+order += "cpu_usage"
 order += "volume master"
 order += "battery all"
 order += "tztime local"
@@ -15,7 +16,11 @@ order += "tztime local"
 # config
 
 memory {
-  format = "MEM: %used "
+  format = " MEM: %used "
+}
+
+cpu_usage {
+  format = " CPU: %usage "
 }
 
 volume master {
