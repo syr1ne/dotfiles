@@ -7,17 +7,11 @@ general {
 
 # layout
 
-order += "wireless _first_"
 order += "volume master"
 order += "battery all"
 order += "tztime local"
 
 # config
-
-wireless _first_ {
-        format_up = " WIFI: [%quality at %essid] "
-        format_down = " WIFI: down "
-}
 
 volume master {
 	format = " VOLUME: [%volume] "
