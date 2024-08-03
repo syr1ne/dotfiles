@@ -24,7 +24,7 @@ sudo cp ./refresh /usr/local/bin/
 ## packages required
 
 ```
-yay -S git code thunar thunar-archive-plugin udiskie netcat wget sublime-text-4 noto-fonts-emoji cups system-config-printer dunst lsusb openssh xarchiver unzip unrar openvpn noto-fonts flameshot playerctl auto-cpufreq lxappearance feh materia-gtk-theme papirus-icon-theme brightnessctl dnsutils xorg-xrandr picom xsel rofi pavucontrol nm-connection-editor
+yay -S git code thunar thunar-archive-plugin udiskie netcat wget sublime-text-4 noto-fonts-emoji cups system-config-printer dunst lsusb openssh xarchiver unzip unrar openvpn noto-fonts flameshot playerctl auto-cpufreq lxappearance feh materia-gtk-theme papirus-icon-theme brightnessctl dnsutils xorg-xrandr picom xsel pavucontrol nm-connection-editor
 ```
 
 # extras

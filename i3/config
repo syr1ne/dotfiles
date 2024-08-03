@@ -29,7 +29,7 @@ bindsym $mod+Return exec kitty
 bindsym $mod+q kill
 
 # dmenu
-# bindsym $mod+d exec --no-startup-id dmenu_run -fn 'Hack-15'
+bindsym $mod+d exec --no-startup-id dmenu_run -fn 'Hack-15'
 
 # change focus
 bindsym $mod+j focus left
@@ -209,8 +209,6 @@ client.focused_inactive $in-bgcolor     $in-bgcolor     $in-text        $in-bgco
 client.urgent           $u-bgcolor      $u-bgcolor      $text           $u-bgcolor 
 
 for_window [class="^.*"] border pixel 3
-
-bindsym $mod+d exec --no-startup-id rofi -no-config -show drun -font "Hack 15" -icon-theme "Papirus" -show-icons -theme "Arc-Dark"
 
 # resizing window
 bindsym $mod+Control+j resize shrink width 100 px or 100 ppt
