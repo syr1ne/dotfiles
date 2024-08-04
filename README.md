@@ -11,7 +11,6 @@ cp ~/.config/i3/config ~/.config/i3/config.bak
 cp ./i3/config ~/.config/i3/config
 cp -r ./i3status ~/.config/
 cp -r ./dunst ~/.config/
-cp -r ./kitty ~/.config/
 cp -r ./picom ~/.config/
 cp .vimrc ~/
 sudo cp ./90-touchpad.conf /etc/X11/xorg.conf.d/
@@ -24,7 +23,7 @@ sudo cp ./refresh /usr/local/bin/
 ## packages required
 
 ```
-yay -S git code thunar thunar-archive-plugin udiskie netcat wget sublime-text-4 noto-fonts-emoji cups system-config-printer dunst lsusb openssh xarchiver unzip unrar openvpn noto-fonts flameshot playerctl auto-cpufreq lxappearance feh materia-gtk-theme papirus-icon-theme brightnessctl dnsutils xorg-xrandr picom xsel pavucontrol nm-connection-editor
+yay -S git code thunar thunar-archive-plugin udiskie netcat wget sublime-text-4 noto-fonts-emoji cups system-config-printer dunst lsusb openssh xarchiver unzip unrar openvpn noto-fonts flameshot playerctl auto-cpufreq lxappearance feh materia-gtk-theme papirus-icon-theme brightnessctl dnsutils xorg-xrandr picom xsel pavucontrol nm-connection-editor i3-sensible-terminal kitty
 ```
 
 # extras
