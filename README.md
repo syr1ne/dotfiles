@@ -4,6 +4,17 @@ these are my configuration files for linux
 
 ![screenshot](https://github.com/syr1ne/dotfiles/blob/main/screenshot.png)
 
+## packages required
+
+yay package manager:
+```
+sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin && makepkg -si
+```
+other stuffs:
+```
+yay -S git code thunar thunar-archive-plugin udiskie gnu-netcat wget noto-fonts-emoji cups system-config-printer dunst openssh xarchiver unzip unrar openvpn noto-fonts flameshot playerctl auto-cpufreq lxappearance feh materia-gtk-theme papirus-icon-theme brightnessctl dnsutils xorg-xrandr picom xsel pavucontrol nm-connection-editor kitty pulseaudio pulseaudio-alsa pulseaudio-bluetooth pulseaudio-equalizer pulseaudio-jack pulseaudio-lirc network-manager-applet
+```
+
 ## setup
 
 ```bash
@@ -20,18 +31,17 @@ mkdir ~/.wallpapers
 sudo cp ./refresh /usr/local/bin/
 ```
 
-## packages required
+## things to do
 
-yay package manager:
 ```
-sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin && makepkg -si
-```
-other stuffs:
-```
-yay -S git code thunar thunar-archive-plugin udiskie netcat wget noto-fonts-emoji cups system-config-printer dunst openssh xarchiver unzip unrar openvpn noto-fonts flameshot playerctl auto-cpufreq lxappearance feh materia-gtk-theme papirus-icon-theme brightnessctl dnsutils xorg-xrandr picom xsel pavucontrol nm-connection-editor kitty pulseaudio pulseaudio-alsa pulseaudio-bluetooth pulseaudio-equalizer pulseaudio-jack pulseaudio-lirc network-manager-applet
-```
+sudo auto-cpufreq --install
+systemctl enable --now preload
+systemctl enable --now auto-cpufreq
+``` 
 
-# extras
+change the theme using `lxappearance` to materia
+
+## extras
 there are extra configuration files for DE.
 
 ```
