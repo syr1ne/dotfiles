@@ -28,7 +28,7 @@ sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/ya
 ```
 other stuffs:
 ```
-yay -S git code thunar thunar-archive-plugin udiskie netcat wget noto-fonts-emoji cups system-config-printer dunst lsusb openssh xarchiver unzip unrar openvpn noto-fonts flameshot playerctl auto-cpufreq lxappearance feh materia-gtk-theme papirus-icon-theme brightnessctl dnsutils xorg-xrandr picom xsel pavucontrol nm-connection-editor kitty pulseaudio pulseaudio-alsa pulseaudio-bluetooth pulseaudio-equalizer pulseaudio-jack pulseaudio-lirc network-manager-applet
+yay -S git code thunar thunar-archive-plugin udiskie netcat wget noto-fonts-emoji cups system-config-printer dunst openssh xarchiver unzip unrar openvpn noto-fonts flameshot playerctl auto-cpufreq lxappearance feh materia-gtk-theme papirus-icon-theme brightnessctl dnsutils xorg-xrandr picom xsel pavucontrol nm-connection-editor kitty pulseaudio pulseaudio-alsa pulseaudio-bluetooth pulseaudio-equalizer pulseaudio-jack pulseaudio-lirc network-manager-applet
 ```
 
 # extras
