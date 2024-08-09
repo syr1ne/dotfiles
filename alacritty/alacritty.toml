@@ -1,3 +1,17 @@
 import = [
     "~/.config/alacritty/themes/monokai_charcoal.toml"
 ]
+
+[cursor]
+style = "Beam"
+unfocused_hollow = false
+
+[env]
+TERM = "xterm"
+
+[font]
+size = 10
+
+[font.normal]
+family = "monospace"
+style = "Regular"
