@@ -4,7 +4,7 @@
 set $mod Mod4
 
 # global font
-font pango:Hack 12
+font pango:monospace 12
 
 exec --no-startup-id dex --autostart --environment i3
 
@@ -29,7 +29,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+q kill
 
 # dmenu
-bindsym $mod+d exec --no-startup-id dmenu_run -fn 'Hack-15'
+bindsym $mod+d exec --no-startup-id dmenu_run -fn 'monospace-15'
 
 # change focus
 bindsym $mod+j focus left
