@@ -26,7 +26,7 @@ then
   echo ""
   echo -e "${BLUE} [+] pacman found ${NC}"
   echo -e "${BLUE} [+] updating packages using pacman... ${NC}"
-  sudo pacman -Syyyu
+  sudo pacman -Syyyu --noconfirm
   echo -e "${RED} ==>  pacman update completed! ${NC}"
   echo -e "${BLUE} [+] cleaning unneeded dependencies ${NC}"
   sudo pacman -Sc --noconfirm
@@ -40,10 +40,10 @@ then
   echo ""
   echo -e "${BLUE} [+] yay found ${NC}"
   echo -e "${BLUE} [+] updating packages using yay... ${NC}"
-  yay -Syyyu
+  yay -Syyyu --noconfirm
   echo -e "${RED} ==>  yay update completed! ${NC}"
   echo -e "${BLUE} [+] cleaning unneeded dependencies ${NC}"
-  yay -Yc
+  yay -Yc --noconfirm
   echo -e "${RED} ==>  yay cleaning completed ${NC}"
   echo ""
 fi
