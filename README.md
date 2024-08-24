@@ -12,7 +12,7 @@ sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/ya
 ```
 other stuffs:
 ```
-yay -S git code thunar thunar-archive-plugin udiskie gnu-netcat wget noto-fonts-emoji cups system-config-printer dunst openssh xarchiver unzip unrar openvpn noto-fonts flameshot playerctl auto-cpufreq lxappearance feh materia-gtk-theme papirus-icon-theme brightnessctl dnsutils xorg-xrandr picom xsel pavucontrol nm-connection-editor alacritty pipewire-pulse network-manager-applet
+yay -S git code thunar thunar-archive-plugin udiskie gnu-netcat wget noto-fonts-emoji cups system-config-printer dunst openssh xarchiver unzip unrar noto-fonts flameshot playerctl auto-cpufreq lxappearance feh materia-gtk-theme papirus-icon-theme brightnessctl dnsutils xorg-xrandr picom xsel pavucontrol nm-connection-editor alacritty pipewire-pulse network-manager-applet
 ```
 
 ## setup
@@ -27,7 +27,6 @@ cp -r ./alacritty ~/.config/
 cp .vimrc ~/
 sudo cp ./90-touchpad.conf /etc/X11/xorg.conf.d/
 mkdir -p ~/.local/share/
-cp -r ./fonts/ ~/.local/share/
 mkdir ~/.wallpapers
 sudo cp ./refresh /usr/local/bin/
 ```
