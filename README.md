@@ -55,3 +55,6 @@ pbcopy and pbpaste for linux: install `xsel` and add below lines in your `.bashr
 alias pbcopy="xsel -i -b"
 alias pbpaste="xsel -o -b"
 ```
+
+## hacking scripts
+hacking scripts in `./hacking/` directory
