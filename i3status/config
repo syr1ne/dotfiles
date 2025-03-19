@@ -9,6 +9,7 @@ general {
 
 order += "memory"
 order += "cpu_usage"
+order += "cpu_temperature 0"
 order += "volume master"
 order += "battery all"
 order += "tztime local"
@@ -21,6 +22,11 @@ memory {
 
 cpu_usage {
   format = " CPU:[%usage] "
+}
+
+cpu_temperature 0 {
+        format = "TEMP:[%degrees°C] "
+        path = "/sys/devices/pci0000:00/0000:00:18.3/hwmon/hwmon4/temp1_input"
 }
 
 volume master {
