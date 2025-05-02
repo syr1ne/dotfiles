@@ -44,6 +44,7 @@ then
   echo -e "${RED} ==>  yay update completed! ${NC}"
   echo -e "${BLUE} [+] cleaning unneeded dependencies ${NC}"
   yay -Yc --noconfirm
+  yay -Sc --noconfirm
   echo -e "${RED} ==>  yay cleaning completed ${NC}"
   echo ""
 fi
