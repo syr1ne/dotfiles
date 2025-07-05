@@ -28,7 +28,6 @@ cp .vimrc ~/
 sudo cp ./90-touchpad.conf /etc/X11/xorg.conf.d/
 mkdir -p ~/.local/share/
 mkdir ~/.wallpapers
-sudo cp ./refresh /usr/local/bin/
 ```
 
 ## things to do

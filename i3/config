@@ -23,7 +23,7 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec alacritty
 
 # close
 bindsym $mod+q kill
@@ -145,7 +145,7 @@ bindsym $mod+r mode "resize"
 
 # i3status bar
 bar {
-  status_command ~/.config/i3status/mic_status.sh
+  status_command i3status
 	position top
 }
 
@@ -160,7 +160,7 @@ gaps outer 5
 exec_always --no-startup-id  shuf -e -n1 $HOME/.wallpapers/* | xargs feh --bg-fill
 
 # monitors
-exec_always --no-startup-id xrandr --output eDP-1 --mode 1920x1080 --output HDMI-1 --mode 1366x768 --left-of eDP-1
+exec_always --no-startup-id xrandr --output eDP-1 --mode 1920x1080 --output HDMI-1 --mode 1920x1080 --right-of eDP-1
 
 # for usb
 exec --no-startup-id udiskie
