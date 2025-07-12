@@ -4,7 +4,7 @@
 set $mod Mod4
 
 # global font
-font pango:monospace 10
+font pango:SF Pro Medium 10
 
 exec --no-startup-id dex --autostart --environment i3
 
@@ -29,7 +29,7 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+q kill
 
 # dmenu
-bindsym $mod+d exec --no-startup-id dmenu_run -fn 'monospace-13' -nb '#000000'
+bindsym $mod+d exec --no-startup-id dmenu_run -fn 'SF Pro Medium-13' -nb '#000000'
 
 # change focus
 bindsym $mod+j focus left
