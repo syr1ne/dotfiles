@@ -24,10 +24,10 @@ cp -r ./i3status ~/.config/
 cp -r ./dunst ~/.config/
 cp -r ./picom ~/.config/
 cp -r ./alacritty ~/.config/
+cp -r .wallpapers/ ~/
 cp .vimrc ~/
 sudo cp ./90-touchpad.conf /etc/X11/xorg.conf.d/
 mkdir -p ~/.local/share/
-mkdir ~/.wallpapers
 ```
 
 ## things to do
