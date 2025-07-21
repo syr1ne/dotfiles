@@ -12,7 +12,7 @@ sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/ya
 ```
 other stuffs:
 ```
-yay -S git code thunar thunar-archive-plugin udiskie gnu-netcat wget noto-fonts-emoji cups system-config-printer dunst openssh xarchiver unzip unrar noto-fonts flameshot playerctl auto-cpufreq lxappearance feh materia-gtk-theme papirus-icon-theme brightnessctl dnsutils xorg-xrandr picom xsel pavucontrol nm-connection-editor kitty pipewire-pulse network-manager-applet blueman bluez bluez-utils gvfs apple-fonts thermald tlp
+yay -S git code thunar thunar-archive-plugin udiskie gnu-netcat wget noto-fonts-emoji cups system-config-printer dunst openssh xarchiver unzip unrar noto-fonts flameshot playerctl auto-cpufreq lxappearance feh materia-gtk-theme papirus-icon-theme brightnessctl dnsutils xorg-xrandr picom xsel pavucontrol nm-connection-editor kitty pipewire-pulse network-manager-applet blueman bluez bluez-utils gvfs apple-fonts thermald
 ```
 
 ## setup
@@ -23,7 +23,6 @@ cp ./i3/config ~/.config/i3/config
 cp -r ./i3status ~/.config/
 cp -r ./dunst ~/.config/
 cp -r ./picom ~/.config/
-cp -r ./alacritty ~/.config/
 cp -r .wallpapers/ ~/
 cp .vimrc ~/
 sudo cp ./90-touchpad.conf /etc/X11/xorg.conf.d/
@@ -37,9 +36,7 @@ sudo auto-cpufreq --install
 systemctl enable --now preload
 systemctl enable --now auto-cpufreq
 systemctl enable --now bluetooth
-
-sudo systemctl enable tlp --now
-sudo systemctl enable thermald --now
+systemctl enable thermald --now
 ``` 
 
 change the theme using `lxappearance` to materia

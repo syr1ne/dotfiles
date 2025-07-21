@@ -23,7 +23,7 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec kitty
 
 # close
 bindsym $mod+q kill
